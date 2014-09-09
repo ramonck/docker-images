@@ -6,7 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive sudo apt-get -y install supervisor curl apach
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin && sudo mv /usr/local/bin/composer.phar /usr/local/bin/composer
 RUN sudo sed -i "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini
 
-RUN sudo cd /usr/local/ 
+RUN cd /usr/local/ 
 RUN sudo wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
 RUN sudo tar xzf ioncube_loaders_lin_x86-64.tar.gz
 RUN sudo rm -f ioncube_loaders_lin_x86-64.tar.gz
