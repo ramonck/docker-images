@@ -12,3 +12,4 @@ RUN ln -s /etc/php5/mods-available/ioncube.ini /etc/php5/cli/conf.d/01-ioncube.i
 RUN ln -s /etc/php5/mods-available/ioncube.ini /etc/php5/apache2/conf.d/01-ioncube.ini
 
 EXPOSE 80
+EXPOSE 22
